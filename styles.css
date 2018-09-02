@@ -1,0 +1,293 @@
+/*Kitten Mittens Photo from */
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+header {
+  background-color: #999;
+  opacity: 0.95;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  max-height: 69px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+header h1 {
+  text-transform: uppercase;
+  margin: auto;
+  color: #1d1d1d;
+}
+
+img {
+  min-height: 80px;
+  max-width: 80px;
+  margin: 5px 20px;
+  flex: 0 0 auto;
+}
+
+nav {
+  align-self: center;
+  flex: 1 0 auto;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #1d1d1d;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  font-size: 2em;
+  color: #eee;
+}
+
+main {
+  min-height: 100%;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  max-height: 100vh;
+}
+
+#home {
+  background-color: #1d1d1d;
+  color: #eee;
+  padding: 50px 0 170px;
+  height: 60%;
+}
+
+#tagline {
+  font-size: 7em !important;
+}
+
+#home p {
+  font-size: 2.5em;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+#home button {
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 0px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  color: #ad2a2b;
+  font-weight: 700;
+  background-color: #1d1d1d;
+}
+
+.homeSection {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.sectionContent {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+#product {
+  background-color: #1d1d1d;
+}
+
+.flexSection-column {
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flexSection-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.productFlexItem {
+  flex-grow: 1;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+#topProductSection {
+  width: 80%;
+  margin: 110px auto 0 auto;
+}
+
+#btmProductSection {
+  padding-top: 50px;
+}
+
+#giphyCredit {
+  margin-right: 85%;
+  font-size: 0.8em;
+}
+
+div.recipeItem {
+  flex: 1 0 auto;
+  font-size: 2em;
+  color: #eee;
+
+  height: 250px;
+  max-width: 250px;
+  border-radius: 5px;
+  background-color: #999;
+}
+
+.recipeItem > p {
+  margin: 10px 0;
+}
+
+.recipeItem > img {
+  display: block;
+  margin: 0 auto;
+  max-height: 120px;
+}
+
+.recipeItem > img:last-of-type {
+  padding-top: 10px;
+}
+
+.mathOps {
+  font-size: 10em;
+  color: #eee;
+}
+
+#noNoise {
+  max-width: 200px !important;
+  opacity: 0.8;
+}
+
+p.tinyText {
+  font-size: 7px !important;
+  padding-left: 0px;
+  padding-top: 0px !important;
+}
+
+#newsletter {
+  background-color: #1d1d1d;
+  padding-top: 180px;
+  padding-bottom: 220px;
+}
+#formWrap {
+  background-color: #999;
+  height: 200px;
+  max-width: 400px;
+
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#formWrap p {
+  padding-top: 15%;
+}
+
+#email {
+  width: 18em;
+}
+
+#submit {
+  color: #ad2a2b;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+}
+
+footer {
+  height: 40px;
+  background-color: #999;
+  color: #1d1d1d;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0 !important;
+  font-size: 0.8em;
+}
+
+@media (max-width: 705px) {
+  header {
+    max-height: 160px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header > .imgWrap {
+    width: 100%;
+  }
+
+  header img {
+    display: block;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  header > nav {
+    flex-grow: 0;
+    padding: 0;
+  }
+
+  header > nav > ul {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  header > nav > ul > li {
+    padding: 20px;
+  }
+  #home {
+    padding-top: 170px;
+  }
+  #tagline {
+    font-size: 5em !important;
+  }
+
+  #home p {
+    font-size: 1.5em;
+  }
+
+  #product {
+    padding-top: 100px;
+  }
+
+  .flexSection-row {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
